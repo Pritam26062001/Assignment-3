@@ -1,0 +1,36 @@
+<!-- The z-index property in CSS controls the stacking order of elements that overlap each other. Elements with a higher z-index are displayed in front of those with a lower z-index. However, the z-index property only works on positioned elements (those with a position value other than static). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+</body>
+</html>
+
+<!-- 
+1.HTML Structure:
+
+The HTML consists of three div elements with classes box red, box blue, and box green.
+2.CSS Styling:
+
+The .box class applies common styles to all boxes: setting their width, height, and positioning them absolutely.
+Each color class (.red, .blue, .green) sets the background color, specific z-index values, and positions.
+3.z-index Property:
+
+.red box has a z-index of 1.
+.blue box has a z-index of 3.
+.green box has a z-index of 2.
+
+Given these z-index values:
+
+The .blue box (z-index: 3) will be on top of both the .red and .green boxes.
+The .green box (z-index: 2) will be below the .blue box but above the .red box.
+The .red box (z-index: 1) will be at the bottom. -->
