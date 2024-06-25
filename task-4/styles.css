@@ -8,8 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0; /* Ensure the header sticks to the top */
     background: rgb(44, 41, 34);
     padding: 15px 20px;
+    z-index: 1000; /* Ensure it stays above other content */
 }
 .header .logo{
     color: white;
@@ -37,11 +40,15 @@
     font-size: 1.8rem;
     border: 1px solid rgb(135, 121, 52);
     border-radius: 10px;
-    
+    cursor: pointer;
 }
 
 .navbar a:hover {
     color: white;
+}
+
+.get-started:hover{
+   color: white;  
 }
 
 /* main secton */
